@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Predictions - NinoSense Climate System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Gov Banner -->
+    <div class="gov-banner">
+        <svg class="flag" viewBox="0 0 16 10" width="16" fill="currentColor">
+            <rect width="16" height="10" fill="#3b82f6"/>
+            <rect width="16" height="5" fill="#ef4444"/>
+            <rect width="6" height="5" fill="#1e3a8a"/>
+        </svg>
+        An official website of the Meteorological Advisory Services Authority
+    </div>
+
+    <!-- Top Navbar -->
+    {% include 'components/navbar.html' %}
+
+    <div class="app-container" style="margin-top: 95px;">
+        <!-- Left Sidebar -->
+        {% include 'components/sidebar.html' %}
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <div style="margin-bottom: 2rem;">
+                <h1 class="page-title">ML Predictions & Forecasting</h1>
+                <p class="page-subtitle">Multi-step future sea surface anomaly forecasting based on scikit-learn random forest regressor models</p>
+            </div>
+
+            <!-- Split Panel: Simulation & Forecast Chart -->
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1.5rem; margin-bottom: 2rem; align-items: start;">
+                <!-- Simulation Controls Card -->
+                <div class="gov-card danger-border">
+                    <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem;">Forecast Simulator</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Simulate how the ocean forecast shifts by adjusting the current Oceanic Niño Index (ONI) reading below.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="oni-sim-slider">Simulated Current ONI: <span id="oni-sim-label" style="font-weight: 800; color: var(--primary);">0.0°C</span></label>
+                        <input type="range" id="oni-sim-slider" min="-3.0" max="3.0" step="0.1" value="0.0" style="width: 100%; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">
+                            <span>-3.0°C (La Niña)</span>
+                            <span>0.0°C (Neutral)</span>
+                            <span>+3.0°C (El Niño)</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="run-sim-btn" style="width: 100%; margin-top: 1rem;">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Compute Simulation
+                    </button>
+                    <button class="btn btn-outline" id="reset-sim-btn" style="width: 100%; margin-top: 0.5rem;">
+                        Reset to Observed
+                    </button>
+                </div>
+
+                <!-- Forecast Chart Card -->
+                <div class="gov-card">
+                    <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1.25rem;">6-Month ENSO Predictive Horizon</h3>
+                    <div style="height: 320px; position: relative;">
+                        <canvas id="forecastChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Health Parameters -->
+            <div style="margin-bottom: 2rem;">
+                <h2 style="font-size: 1.4rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Model Diagnostics & Quality Control</h2>
+                
+                <div class="grid-cols-3" style="margin-bottom: 1.5rem;">
+                    <!-- t+1 MAE -->
+                    <div class="gov-card">
+                        <h4 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">1-Month Horizon (MAE)</h4>
+                        <div class="metric-value" style="font-size: 2rem;" id="mae-t1">--</div>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);" id="r2-t1">R² Score: --</span>
+                    </div>
+
+                    <!-- t+3 MAE -->
+                    <div class="gov-card">
+                        <h4 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">3-Month Horizon (MAE)</h4>
+                        <div class="metric-value" style="font-size: 2rem;" id="mae-t3">--</div>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);" id="r2-t3">R² Score: --</span>
+                    </div>
+
+                    <!-- t+6 MAE -->
+                    <div class="gov-card">
+                        <h4 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">6-Month Horizon (MAE)</h4>
+                        <div class="metric-value" style="font-size: 2rem;" id="mae-t6">--</div>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);" id="r2-t6">R² Score: --</span>
+                    </div>
+                </div>
+
+                <!-- Feature Importances split -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start;">
+                    <!-- Importance card -->
+                    <div class="gov-card">
+                        <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem;">Primary Forecast Drivers</h3>
+                        <div style="height: 300px; position: relative;">
+                            <canvas id="importanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Actual vs Pred test chart -->
+                    <div class="gov-card">
+                        <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem;">Model Validation (Actual vs. Predicted)</h3>
+                        <div style="height: 300px; position: relative;">
+                            <canvas id="validationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Include footer -->
+    {% include 'components/footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
+    <script>
+        // Setup accessibility toggles
+        const toggleBtn = document.getElementById('contrast-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+            const isContrast = document.body.classList.contains('high-contrast');
+            localStorage.setItem('high-contrast-mode', isContrast ? 'enabled' : 'disabled');
+        });
+        if (localStorage.getItem('high-contrast-mode') === 'enabled') {
+            document.body.classList.add('high-contrast');
+        }
+    </script>
+</body>
+</html>

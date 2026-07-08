@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NinoSense Climate System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Gov Banner -->
+    <div class="gov-banner">
+        <svg class="flag" viewBox="0 0 16 10" width="16" fill="currentColor">
+            <rect width="16" height="10" fill="#3b82f6"/>
+            <rect width="16" height="5" fill="#ef4444"/>
+            <rect width="6" height="5" fill="#1e3a8a"/>
+        </svg>
+        An official website of the Meteorological Advisory Services Authority
+    </div>
+
+    <!-- Top Navbar -->
+    {% include 'components/navbar.html' %}
+
+    <div class="app-container" style="margin-top: 95px;">
+        <!-- Left Sidebar -->
+        {% include 'components/sidebar.html' %}
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h1 class="page-title">Climate Dashboard</h1>
+                    <p class="page-subtitle">Real-time sea surface temperature anomaly observations in the Niño 3.4 region</p>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <a href="{{ url_for('history.export_pdf') }}" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download briefing
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="grid-cols-4" style="margin-bottom: 2rem;">
+                <!-- Latest ONI Reading -->
+                <div class="gov-card">
+                    <h3 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Latest ONI Value</h3>
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+                        <span class="metric-value" id="latest-oni-val">-.-°C</span>
+                        <div class="status-indicator" id="latest-oni-indicator">-</div>
+                    </div>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);" id="latest-oni-period">Period: ----</span>
+                </div>
+
+                <!-- Climate Phase -->
+                <div class="gov-card secondary-border">
+                    <h3 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">ENSO Cycle Phase</h3>
+                    <div class="metric-value" style="font-size: 1.85rem;" id="latest-phase">Neutral</div>
+                    <span class="metric-trend" id="latest-severity">Severity: N/A</span>
+                </div>
+
+                <!-- Historical Averages -->
+                <div class="gov-card">
+                    <h3 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Mean Baseline ONI</h3>
+                    <div class="metric-value" id="mean-oni">-.-°C</div>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);" id="min-max-oni">Range: -.-°C to -.-°C</span>
+                </div>
+
+                <!-- Active Subscribers -->
+                <div class="gov-card">
+                    <h3 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Security Level</h3>
+                    <div class="metric-value" style="font-size: 1.85rem; color: var(--accent-blue)">SECURE</div>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);">Database Status: Synced</span>
+                </div>
+            </div>
+
+            <!-- Chart and Statistics Split -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 2rem; align-items: start;">
+                <!-- Chart Area -->
+                <div class="gov-card" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1.25rem;">Oceanic Niño Index (3-Year Historical Trend)</h3>
+                    <div style="height: 320px; position: relative;">
+                        <canvas id="oniTrendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Sidebar Grid details -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Phase Distribution -->
+                    <div class="gov-card secondary-border">
+                        <h3 style="font-size: 1rem; color: var(--primary); margin-bottom: 1rem;">Historical Phase Distribution</h3>
+                        
+                        <div class="phase-bar-container">
+                            <div class="phase-bar-label">
+                                <span>El Niño (≥ +0.5°C)</span>
+                                <span id="dist-nino-val">--%</span>
+                            </div>
+                            <div class="phase-bar">
+                                <div class="phase-bar-fill el-nino" id="dist-nino-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="phase-bar-container">
+                            <div class="phase-bar-label">
+                                <span>La Niña (≤ -0.5°C)</span>
+                                <span id="dist-nina-val">--%</span>
+                            </div>
+                            <div class="phase-bar">
+                                <div class="phase-bar-fill la-nina" id="dist-nina-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="phase-bar-container">
+                            <div class="phase-bar-label">
+                                <span>Neutral (-0.5°C to +0.5°C)</span>
+                                <span id="dist-neutral-val">--%</span>
+                            </div>
+                            <div class="phase-bar">
+                                <div class="phase-bar-fill neutral" id="dist-neutral-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bulletins list -->
+                    <div class="gov-card">
+                        <h3 style="font-size: 1rem; color: var(--primary); margin-bottom: 1rem;">Agency Warnings Board</h3>
+                        <div class="bulletin-list">
+                            <div class="bulletin-item">
+                                <span class="bulletin-date">JULY 2026</span>
+                                <h4 class="bulletin-title">Model Update Complete</h4>
+                                <p class="bulletin-body">Forecasting model updated with scikit-learn random forest regressor algorithms.</p>
+                            </div>
+                            <div class="bulletin-item">
+                                <span class="bulletin-date">JUNE 2026</span>
+                                <h4 class="bulletin-title">Niño 3.4 Monitoring Active</h4>
+                                <p class="bulletin-body">Equatorial trade wind velocities exhibiting moderate seasonal changes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Include footer -->
+    {% include 'components/footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    <script>
+        // Setup accessibility toggles
+        const toggleBtn = document.getElementById('contrast-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+            const isContrast = document.body.classList.contains('high-contrast');
+            localStorage.setItem('high-contrast-mode', isContrast ? 'enabled' : 'disabled');
+        });
+        if (localStorage.getItem('high-contrast-mode') === 'enabled') {
+            document.body.classList.add('high-contrast');
+        }
+    </script>
+</body>
+</html>

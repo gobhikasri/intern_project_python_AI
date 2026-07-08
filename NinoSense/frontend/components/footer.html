@@ -1,0 +1,105 @@
+<footer class="app-footer-gov">
+    <div class="footer-links-grid">
+        <div class="footer-column">
+            <h4 class="footer-col-title">About NinoSense</h4>
+            <p class="footer-text-desc">
+                NinoSense is an official climate observation initiative leveraging advanced machine learning models to forecast Sea Surface Temperature (SST) anomalies in the Pacific Ocean.
+            </p>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-col-title">Resources & Info</h4>
+            <ul class="footer-links-list">
+                <li><a href="#">ENSO Monitoring NOAA</a></li>
+                <li><a href="#">BOM Climate Models</a></li>
+                <li><a href="#">Meteorological Databases</a></li>
+                <li><a href="#">System Architecture</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-col-title">Legal & Security</h4>
+            <ul class="footer-links-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FOIA Requests</a></li>
+                <li><a href="#">Disclaimers & Data Limitations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-gov">
+        <p>&copy; 2026 NinoSense Climatic Analytics Agency. All meteorological datasets are sourced via public NOAA records. Dedicated to public transparency and data resilience.</p>
+    </div>
+</footer>
+
+<style>
+.app-footer-gov {
+    background-color: #0f172a; /* Slate 900 */
+    border-top: 3px solid var(--secondary);
+    color: #94a3b8;
+    padding: 3rem 2rem 1.5rem 2rem;
+    margin-top: auto;
+}
+
+.footer-links-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-col-title {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-text-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links-list a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: var(--transition-smooth);
+}
+
+.footer-links-list a:hover {
+    color: white;
+    padding-left: 2px;
+}
+
+.footer-bottom-gov {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+</style>

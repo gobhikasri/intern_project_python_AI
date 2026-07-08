@@ -1,0 +1,218 @@
+/* Auth Page Styles */
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 10% 20%, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 90.1%);
+    padding: 1.5rem;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-logo {
+    width: 64px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.auth-title {
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.auth-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Google Login Button */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dadce0;
+    color: #3c4043;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn-google:hover {
+    background-color: #f8f9fa;
+    border-color: #d2e3fc;
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.btn-google img {
+    width: 18px;
+    height: 18px;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.auth-divider:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.auth-divider:not(:empty)::after {
+    margin-left: .5em;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.auth-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* Mock Google Account Chooser UI */
+.google-chooser-wrapper {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.google-chooser-card {
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+
+.google-chooser-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.google-logo-svg {
+    height: 24px;
+    margin-bottom: 1rem;
+}
+
+.google-chooser-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #202124;
+}
+
+.google-chooser-subtitle {
+    font-size: 1rem;
+    color: #5f6368;
+    margin-top: 0.5rem;
+}
+
+.account-list {
+    margin-top: 1.5rem;
+    border-top: 1px solid #dadce0;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #dadce0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-align: left;
+}
+
+.account-item:hover {
+    background-color: #f8f9fa;
+}
+
+.account-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e8f0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-details {
+    flex-grow: 1;
+}
+
+.account-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.account-email {
+    font-size: 0.75rem;
+    color: #5f6368;
+}
