@@ -1,0 +1,1482 @@
+{
+    "Andhra Pradesh": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Visakhapatnam": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Vijayawada": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Tirupati": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Kurnool": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Arunachal Pradesh": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Itanagar": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Naharlagun": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Pasighat": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Assam": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Guwahati": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Silchar": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Dibrugarh": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Bihar": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Patna": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Gaya": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Muzaffarpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Chhattisgarh": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Raipur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Bilaspur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Durg": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Goa": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Panaji": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Margao": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Vasco da Gama": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Gujarat": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Ahmedabad": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Surat": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Vadodara": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Rajkot": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Haryana": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Gurugram": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Faridabad": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Panipat": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Himachal Pradesh": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Shimla": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Dharamshala": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Mandi": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Jharkhand": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Ranchi": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Jamshedpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Dhanbad": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Karnataka": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Bengaluru": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Mysuru": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Mangaluru": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Hubballi": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Kerala": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Kochi": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Thiruvananthapuram": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Kozhikode": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Madhya Pradesh": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Bhopal": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Indore": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Jabalpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Maharashtra": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Mumbai": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Pune": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Nagpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Nashik": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Manipur": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Imphal": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Thoubal": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Meghalaya": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Shillong": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Tura": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Mizoram": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Aizawl": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Lunglei": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Nagaland": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Kohima": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Dimapur": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Odisha": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Bhubaneswar": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Cuttack": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Puri": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Punjab": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Ludhiana": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Amritsar": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Jalandhar": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Rajasthan": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Jaipur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Jodhpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Udaipur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Sikkim": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Gangtok": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Namchi": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Tamil Nadu": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Chennai": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Coimbatore": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Madurai": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Salem": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Trichy": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Telangana": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Hyderabad": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Warangal": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Nizamabad": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Tripura": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Agartala": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Udaipur": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Uttar Pradesh": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Lucknow": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Kanpur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Agra": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Varanasi": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Uttarakhand": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Dehradun": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Haridwar": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Haldwani": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "West Bengal": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Kolkata": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Howrah": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Durgapur": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Andaman and Nicobar Islands": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Port Blair": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Chandigarh": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Chandigarh": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Dadra and Nagar Haveli and Daman and Diu": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Daman": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Silvassa": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Delhi": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "New Delhi": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Jammu and Kashmir": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Srinagar": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Jammu": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Ladakh": {
+        "risk": "Medium",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Rainfall variability",
+            "Above normal temperatures",
+            "Crop yield fluctuations",
+            "Localized dry spells"
+        ],
+        "cities": {
+            "Leh": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            },
+            "Kargil": {
+                "risk": "Medium",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Rainfall variability",
+                    "Above normal temperatures",
+                    "Crop yield fluctuations",
+                    "Localized dry spells"
+                ]
+            }
+        }
+    },
+    "Lakshadweep": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Kavaratti": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    },
+    "Puducherry": {
+        "risk": "High",
+        "forecast_oni": 1.8,
+        "effects": [
+            "Heatwave risk",
+            "Reduced rainfall",
+            "Drought possibility",
+            "Water shortage risk",
+            "Agricultural stress"
+        ],
+        "cities": {
+            "Puducherry": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            },
+            "Karaikal": {
+                "risk": "High",
+                "forecast_oni": 1.8,
+                "effects": [
+                    "Heatwave risk",
+                    "Reduced rainfall",
+                    "Drought possibility",
+                    "Water shortage risk",
+                    "Agricultural stress"
+                ]
+            }
+        }
+    }
+}

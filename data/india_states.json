@@ -1,0 +1,181 @@
+{
+    "Andhra Pradesh": {
+        "base_risk": "Medium",
+        "cities": ["Visakhapatnam","Vijayawada","Tirupati","Kurnool"]
+    },
+
+    "Arunachal Pradesh": {
+        "base_risk": "Low",
+        "cities": ["Itanagar","Naharlagun","Pasighat"]
+    },
+
+    "Assam": {
+        "base_risk": "Medium",
+        "cities": ["Guwahati","Silchar","Dibrugarh"]
+    },
+
+    "Bihar": {
+        "base_risk": "Medium",
+        "cities": ["Patna","Gaya","Muzaffarpur"]
+    },
+
+    "Chhattisgarh": {
+        "base_risk": "Medium",
+        "cities": ["Raipur","Bilaspur","Durg"]
+    },
+
+    "Goa": {
+        "base_risk": "Low",
+        "cities": ["Panaji","Margao","Vasco da Gama"]
+    },
+
+    "Gujarat": {
+        "base_risk": "Medium",
+        "cities": ["Ahmedabad","Surat","Vadodara","Rajkot"]
+    },
+
+    "Haryana": {
+        "base_risk": "Low",
+        "cities": ["Gurugram","Faridabad","Panipat"]
+    },
+
+    "Himachal Pradesh": {
+        "base_risk": "Low",
+        "cities": ["Shimla","Dharamshala","Mandi"]
+    },
+
+    "Jharkhand": {
+        "base_risk": "Medium",
+        "cities": ["Ranchi","Jamshedpur","Dhanbad"]
+    },
+
+    "Karnataka": {
+        "base_risk": "High",
+        "cities": ["Bengaluru","Mysuru","Mangaluru","Hubballi"]
+    },
+
+    "Kerala": {
+        "base_risk": "Medium",
+        "cities": ["Kochi","Thiruvananthapuram","Kozhikode"]
+    },
+
+    "Madhya Pradesh": {
+        "base_risk": "Medium",
+        "cities": ["Bhopal","Indore","Jabalpur"]
+    },
+
+    "Maharashtra": {
+        "base_risk": "Medium",
+        "cities": ["Mumbai","Pune","Nagpur","Nashik"]
+    },
+
+    "Manipur": {
+        "base_risk": "Low",
+        "cities": ["Imphal","Thoubal"]
+    },
+
+    "Meghalaya": {
+        "base_risk": "Low",
+        "cities": ["Shillong","Tura"]
+    },
+
+    "Mizoram": {
+        "base_risk": "Low",
+        "cities": ["Aizawl","Lunglei"]
+    },
+
+    "Nagaland": {
+        "base_risk": "Low",
+        "cities": ["Kohima","Dimapur"]
+    },
+
+    "Odisha": {
+        "base_risk": "Medium",
+        "cities": ["Bhubaneswar","Cuttack","Puri"]
+    },
+
+    "Punjab": {
+        "base_risk": "Low",
+        "cities": ["Ludhiana","Amritsar","Jalandhar"]
+    },
+
+    "Rajasthan": {
+        "base_risk": "High",
+        "cities": ["Jaipur","Jodhpur","Udaipur"]
+    },
+
+    "Sikkim": {
+        "base_risk": "Low",
+        "cities": ["Gangtok","Namchi"]
+    },
+
+    "Tamil Nadu": {
+        "base_risk": "High",
+        "cities": ["Chennai","Coimbatore","Madurai","Salem","Trichy"]
+    },
+
+    "Telangana": {
+        "base_risk": "Medium",
+        "cities": ["Hyderabad","Warangal","Nizamabad"]
+    },
+
+    "Tripura": {
+        "base_risk": "Low",
+        "cities": ["Agartala","Udaipur"]
+    },
+
+    "Uttar Pradesh": {
+        "base_risk": "Medium",
+        "cities": ["Lucknow","Kanpur","Agra","Varanasi"]
+    },
+
+    "Uttarakhand": {
+        "base_risk": "Low",
+        "cities": ["Dehradun","Haridwar","Haldwani"]
+    },
+
+    "West Bengal": {
+        "base_risk": "Medium",
+        "cities": ["Kolkata","Howrah","Durgapur"]
+    },
+
+    "Andaman and Nicobar Islands": {
+        "base_risk": "Medium",
+        "cities": ["Port Blair"]
+    },
+
+    "Chandigarh": {
+        "base_risk": "Low",
+        "cities": ["Chandigarh"]
+    },
+
+    "Dadra and Nagar Haveli and Daman and Diu": {
+        "base_risk": "Low",
+        "cities": ["Daman","Silvassa"]
+    },
+
+    "Delhi": {
+        "base_risk": "Low",
+        "cities": ["New Delhi"]
+    },
+
+    "Jammu and Kashmir": {
+        "base_risk": "Low",
+        "cities": ["Srinagar","Jammu"]
+    },
+
+    "Ladakh": {
+        "base_risk": "Low",
+        "cities": ["Leh","Kargil"]
+    },
+
+    "Lakshadweep": {
+        "base_risk": "Medium",
+        "cities": ["Kavaratti"]
+    },
+
+    "Puducherry": {
+        "base_risk": "Medium",
+        "cities": ["Puducherry","Karaikal"]
+    }
+}
