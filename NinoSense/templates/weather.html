@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Weather</title>
+
+</head>
+
+<body>
+
+<h1>Current Weather</h1>
+
+{% if weather %}
+
+<p><b>City:</b> {{ weather.city }}</p>
+
+<p><b>Temperature:</b> {{ weather.temperature }} °C</p>
+
+<p><b>Humidity:</b> {{ weather.humidity }}%</p>
+
+<p><b>Pressure:</b> {{ weather.pressure }} hPa</p>
+
+<p><b>Wind Speed:</b> {{ weather.wind_speed }} m/s</p>
+
+<p><b>Condition:</b> {{ weather.weather }}</p>
+
+{% else %}
+
+<h3>Unable to fetch weather.</h3>
+
+{% endif %}
+
+</body>
+
+</html>

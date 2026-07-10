@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Niño Early Warning Dashboard</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:30px;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align:center;
+            color:#333;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        th, td{
+            padding:12px;
+            border:1px solid #ddd;
+            text-align:center;
+        }
+
+        th{
+            background:#007bff;
+            color:white;
+        }
+
+        .alert{
+            font-size:22px;
+            text-align:center;
+            font-weight:bold;
+        }
+
+        .map-btn-container{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .map-btn{
+            padding:12px 25px;
+            font-size:16px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .map-btn:hover{
+            background:#0056b3;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌊 El Niño Early Warning Dashboard</h1>
+
+    <div class="card">
+        <h2>Current ONI Value</h2>
+        <h3>{{ current_oni }}</h3>
+    </div>
+
+    <div class="card">
+
+        <h2>Next 6 Forecast Months</h2>
+
+        <table>
+
+            <tr>
+                <th>Forecast Month</th>
+                <th>Predicted ONI</th>
+                <th>Risk Level</th>
+            </tr>
+
+            {% for item in forecast_data %}
+
+            <tr>
+                <td>{{ item.date }}</td>
+                <td>{{ item.oni }}</td>
+                <td>{{ item.risk }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+    <div class="card alert">
+        {{ overall_alert }}
+    </div>
+
+    <div class="map-btn-container">
+
+        <a href="/map">
+            <button class="map-btn">
+                🌎 View Climate Map
+            </button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
+<div class="card">
+
+    <h2>🇮🇳 India El Niño Risk Map</h2>
+
+    <iframe
+        src="{{ url_for('static', filename='maps/india_map.html') }}"
+        width="100%"
+        height="650"
+        style="border:none;border-radius:10px;">
+    </iframe>
+
+</div>
+
+<div style="text-align:center; margin:20px 0;">
+
+    <a href="/map">
+        <button>🌍 Global Map</button>
+    </a>
+
+    <a href="{{ url_for('static', filename='maps/india_map.html') }}" target="_blank">
+        <button>🇮🇳 Open India Map</button>
+    </a>
+
+</div>
+
+<div class="card">
+
+<h2>Current Weather</h2>
+
+{% if weather %}
+
+<p><b>City:</b> {{ weather.city }}</p>
+
+<p><b>Temperature:</b> {{ weather.temperature }} °C</p>
+
+<p><b>Humidity:</b> {{ weather.humidity }}%</p>
+
+<p><b>Pressure:</b> {{ weather.pressure }} hPa</p>
+
+<p><b>Wind Speed:</b> {{ weather.wind_speed }} m/s</p>
+
+<p><b>Condition:</b> {{ weather.weather }}</p>
+
+{% else %}
+
+<p>Weather data unavailable.</p>
+
+{% endif %}
+
+</div>
+
+<iframe
+    src="{{ url_for('static', filename='maps/india_map.html') }}"
+    width="100%"
+    height="700"
+    style="border:none;">
+</iframe>

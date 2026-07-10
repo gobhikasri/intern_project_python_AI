@@ -1,0 +1,745 @@
+{
+    "Andhra Pradesh": {
+        "cities": [
+            "Visakhapatnam",
+            "Vijayawada",
+            "Guntur"
+        ],
+        "effects": [
+            "Andhra Pradesh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Arunachal Pradesh": {
+        "cities": [
+            "Itanagar",
+            "Pasighat",
+            "Tawang"
+        ],
+        "effects": [
+            "Arunachal Pradesh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Assam": {
+        "cities": [
+            "Guwahati",
+            "Dibrugarh",
+            "Silchar"
+        ],
+        "effects": [
+            "Assam is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Bihar": {
+        "cities": [
+            "Patna",
+            "Gaya",
+            "Muzaffarpur"
+        ],
+        "effects": [
+            "Bihar is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Chhattisgarh": {
+        "cities": [
+            "Raipur",
+            "Bilaspur",
+            "Bhilai"
+        ],
+        "effects": [
+            "Chhattisgarh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Goa": {
+        "cities": [
+            "Panaji",
+            "Margao",
+            "Vasco da Gama"
+        ],
+        "effects": [
+            "Goa is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Gujarat": {
+        "cities": [
+            "Ahmedabad",
+            "Surat",
+            "Vadodara"
+        ],
+        "effects": [
+            "Gujarat is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Haryana": {
+        "cities": [
+            "Gurugram",
+            "Faridabad",
+            "Chandigarh"
+        ],
+        "effects": [
+            "Haryana is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Himachal Pradesh": {
+        "cities": [
+            "Shimla",
+            "Dharamshala",
+            "Manali"
+        ],
+        "effects": [
+            "Himachal Pradesh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Jharkhand": {
+        "cities": [
+            "Ranchi",
+            "Jamshedpur",
+            "Dhanbad"
+        ],
+        "effects": [
+            "Jharkhand is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Karnataka": {
+        "cities": [
+            "Bengaluru",
+            "Mysuru",
+            "Mangaluru"
+        ],
+        "effects": [
+            "Karnataka is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Kerala": {
+        "cities": [
+            "Thiruvananthapuram",
+            "Kochi",
+            "Kozhikode"
+        ],
+        "effects": [
+            "Kerala is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Madhya Pradesh": {
+        "cities": [
+            "Bhopal",
+            "Indore",
+            "Jabalpur"
+        ],
+        "effects": [
+            "Madhya Pradesh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Maharashtra": {
+        "cities": [
+            "Mumbai",
+            "Pune",
+            "Nagpur"
+        ],
+        "effects": [
+            "Maharashtra is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Manipur": {
+        "cities": [
+            "Imphal",
+            "Bishnupur",
+            "Thoubal"
+        ],
+        "effects": [
+            "Manipur is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Meghalaya": {
+        "cities": [
+            "Shillong",
+            "Tura",
+            "Jowai"
+        ],
+        "effects": [
+            "Meghalaya is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Mizoram": {
+        "cities": [
+            "Aizawl",
+            "Lunglei",
+            "Champhai"
+        ],
+        "effects": [
+            "Mizoram is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Nagaland": {
+        "cities": [
+            "Kohima",
+            "Dimapur",
+            "Mokokchung"
+        ],
+        "effects": [
+            "Nagaland is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Odisha": {
+        "cities": [
+            "Bhubaneswar",
+            "Cuttack",
+            "Rourkela"
+        ],
+        "effects": [
+            "Odisha is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Punjab": {
+        "cities": [
+            "Chandigarh",
+            "Ludhiana",
+            "Amritsar"
+        ],
+        "effects": [
+            "Punjab is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Rajasthan": {
+        "cities": [
+            "Jaipur",
+            "Jodhpur",
+            "Udaipur"
+        ],
+        "effects": [
+            "Rajasthan is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Sikkim": {
+        "cities": [
+            "Gangtok",
+            "Namchi",
+            "Mangan"
+        ],
+        "effects": [
+            "Sikkim is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Tamil Nadu": {
+        "cities": [
+            "Chennai",
+            "Coimbatore",
+            "Madurai"
+        ],
+        "effects": [
+            "Tamil Nadu is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Telangana": {
+        "cities": [
+            "Hyderabad",
+            "Warangal",
+            "Nizamabad"
+        ],
+        "effects": [
+            "Telangana is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Tripura": {
+        "cities": [
+            "Agartala",
+            "Udaipur",
+            "Dharmanagar"
+        ],
+        "effects": [
+            "Tripura is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Uttar Pradesh": {
+        "cities": [
+            "Lucknow",
+            "Kanpur",
+            "Varanasi"
+        ],
+        "effects": [
+            "Uttar Pradesh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Uttarakhand": {
+        "cities": [
+            "Dehradun",
+            "Haridwar",
+            "Nainital"
+        ],
+        "effects": [
+            "Uttarakhand is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "West Bengal": {
+        "cities": [
+            "Kolkata",
+            "Durgapur",
+            "Howrah"
+        ],
+        "effects": [
+            "West Bengal is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Andaman and Nicobar Islands": {
+        "cities": [
+            "Port Blair"
+        ],
+        "effects": [
+            "Andaman and Nicobar Islands is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Chandigarh": {
+        "cities": [
+            "Chandigarh"
+        ],
+        "effects": [
+            "Chandigarh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Dadra and Nagar Haveli and Daman and Diu": {
+        "cities": [
+            "Daman",
+            "Silvassa"
+        ],
+        "effects": [
+            "Dadra and Nagar Haveli and Daman and Diu is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Delhi": {
+        "cities": [
+            "Delhi"
+        ],
+        "effects": [
+            "Delhi is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Jammu and Kashmir": {
+        "cities": [
+            "Srinagar",
+            "Jammu"
+        ],
+        "effects": [
+            "Jammu and Kashmir is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Ladakh": {
+        "cities": [
+            "Leh",
+            "Kargil"
+        ],
+        "effects": [
+            "Ladakh is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Lakshadweep": {
+        "cities": [
+            "Kavaratti"
+        ],
+        "effects": [
+            "Lakshadweep is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    },
+    "Puducherry": {
+        "cities": [
+            "Pondicherry"
+        ],
+        "effects": [
+            "Puducherry is affected by El Ni\u00f1o driven rainfall shifts",
+            "Agricultural stress may increase under neutral",
+            "Water resource planning should be strengthened"
+        ],
+        "risk": "Low",
+        "forecast_oni": -0.81,
+        "condition": "Neutral",
+        "national_context": [
+            "Reduced southwest monsoon rainfall",
+            "Drought risk in agricultural regions",
+            "Above-normal temperatures",
+            "Water scarcity risk"
+        ]
+    }
+}

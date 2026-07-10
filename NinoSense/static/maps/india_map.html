@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2fa15d3744d9c784b0b5fe99dfcdef08 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="
+position: fixed;
+bottom: 40px;
+left: 40px;
+z-index:9999;
+background:white;
+padding:10px;
+border:2px solid black;
+border-radius:8px;
+">
+
+<b>Risk Levels</b><br>
+🔴 High<br>
+🟠 Medium<br>
+🟢 Low
+
+</div>
+    
+            <div class="folium-map" id="map_2fa15d3744d9c784b0b5fe99dfcdef08" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2fa15d3744d9c784b0b5fe99dfcdef08 = L.map(
+                "map_2fa15d3744d9c784b0b5fe99dfcdef08",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5328775e422cbf54f1e76608aacfa75 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e5328775e422cbf54f1e76608aacfa75.addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+            var circle_marker_f72b0e5133ed48ce04d107e6a9df3a9b = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_a5a0def794ae8ce09c92d4c5e9fc495b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f30180c2ae3a719febf9887556c9bf97 = $(`<div id="html_f30180c2ae3a719febf9887556c9bf97" style="width: 100.0%; height: 100.0%;">     <h3>Andhra Pradesh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Andhra Pradesh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Visakhapatnam, Vijayawada, Guntur     </div>`)[0];
+                popup_a5a0def794ae8ce09c92d4c5e9fc495b.setContent(html_f30180c2ae3a719febf9887556c9bf97);
+            
+        
+
+        circle_marker_f72b0e5133ed48ce04d107e6a9df3a9b.bindPopup(popup_a5a0def794ae8ce09c92d4c5e9fc495b)
+        ;
+
+        
+    
+    
+            circle_marker_f72b0e5133ed48ce04d107e6a9df3a9b.bindTooltip(
+                `<div>
+                     Andhra Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00721b076bb893e9d5d0cc051f2c5678 = L.circleMarker(
+                [28.218, 94.7278],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_b9f831eda04458029f7927ab7cfd81b0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f30e9a530b9ad283955be737b14a6f85 = $(`<div id="html_f30e9a530b9ad283955be737b14a6f85" style="width: 100.0%; height: 100.0%;">     <h3>Arunachal Pradesh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Arunachal Pradesh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Itanagar, Pasighat, Tawang     </div>`)[0];
+                popup_b9f831eda04458029f7927ab7cfd81b0.setContent(html_f30e9a530b9ad283955be737b14a6f85);
+            
+        
+
+        circle_marker_00721b076bb893e9d5d0cc051f2c5678.bindPopup(popup_b9f831eda04458029f7927ab7cfd81b0)
+        ;
+
+        
+    
+    
+            circle_marker_00721b076bb893e9d5d0cc051f2c5678.bindTooltip(
+                `<div>
+                     Arunachal Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2d8f7f9660dde12e33028a852bf1389 = L.circleMarker(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_49ea9bdace62a35cbfad27f3786096ca = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5216725f0a9e40dcf0d6789a305d69ba = $(`<div id="html_5216725f0a9e40dcf0d6789a305d69ba" style="width: 100.0%; height: 100.0%;">     <h3>Assam</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Assam is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Guwahati, Dibrugarh, Silchar     </div>`)[0];
+                popup_49ea9bdace62a35cbfad27f3786096ca.setContent(html_5216725f0a9e40dcf0d6789a305d69ba);
+            
+        
+
+        circle_marker_d2d8f7f9660dde12e33028a852bf1389.bindPopup(popup_49ea9bdace62a35cbfad27f3786096ca)
+        ;
+
+        
+    
+    
+            circle_marker_d2d8f7f9660dde12e33028a852bf1389.bindTooltip(
+                `<div>
+                     Assam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b26be4e06117d5851888dddbf4968426 = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_b2464fd2176987f63c8038ab24e00255 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4a87f7bc7f18d29da64a9f8be939be97 = $(`<div id="html_4a87f7bc7f18d29da64a9f8be939be97" style="width: 100.0%; height: 100.0%;">     <h3>Bihar</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Bihar is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Patna, Gaya, Muzaffarpur     </div>`)[0];
+                popup_b2464fd2176987f63c8038ab24e00255.setContent(html_4a87f7bc7f18d29da64a9f8be939be97);
+            
+        
+
+        circle_marker_b26be4e06117d5851888dddbf4968426.bindPopup(popup_b2464fd2176987f63c8038ab24e00255)
+        ;
+
+        
+    
+    
+            circle_marker_b26be4e06117d5851888dddbf4968426.bindTooltip(
+                `<div>
+                     Bihar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc60da0da5c0e1786944a8610d656d12 = L.circleMarker(
+                [21.2787, 81.8661],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_57c8efdc675753fcac84c8d4f1d87e79 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a65af5782a5cf94261dfb45424703c0b = $(`<div id="html_a65af5782a5cf94261dfb45424703c0b" style="width: 100.0%; height: 100.0%;">     <h3>Chhattisgarh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Chhattisgarh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Raipur, Bilaspur, Bhilai     </div>`)[0];
+                popup_57c8efdc675753fcac84c8d4f1d87e79.setContent(html_a65af5782a5cf94261dfb45424703c0b);
+            
+        
+
+        circle_marker_fc60da0da5c0e1786944a8610d656d12.bindPopup(popup_57c8efdc675753fcac84c8d4f1d87e79)
+        ;
+
+        
+    
+    
+            circle_marker_fc60da0da5c0e1786944a8610d656d12.bindTooltip(
+                `<div>
+                     Chhattisgarh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_131be17e94379977ac98dfb13098f2a5 = L.circleMarker(
+                [15.2993, 74.124],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_6c62d92a300c7963c34f855c474987ec = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f201b128acb46dc5fbb92eb73036bbb4 = $(`<div id="html_f201b128acb46dc5fbb92eb73036bbb4" style="width: 100.0%; height: 100.0%;">     <h3>Goa</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Goa is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Panaji, Margao, Vasco da Gama     </div>`)[0];
+                popup_6c62d92a300c7963c34f855c474987ec.setContent(html_f201b128acb46dc5fbb92eb73036bbb4);
+            
+        
+
+        circle_marker_131be17e94379977ac98dfb13098f2a5.bindPopup(popup_6c62d92a300c7963c34f855c474987ec)
+        ;
+
+        
+    
+    
+            circle_marker_131be17e94379977ac98dfb13098f2a5.bindTooltip(
+                `<div>
+                     Goa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49cdf29e4588ff3ad13c82f9c4fae35f = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_479ef94a2cda8e2a04ef69c501d875cd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e11b567d14268f764f4826591b95ceeb = $(`<div id="html_e11b567d14268f764f4826591b95ceeb" style="width: 100.0%; height: 100.0%;">     <h3>Gujarat</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Gujarat is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Ahmedabad, Surat, Vadodara     </div>`)[0];
+                popup_479ef94a2cda8e2a04ef69c501d875cd.setContent(html_e11b567d14268f764f4826591b95ceeb);
+            
+        
+
+        circle_marker_49cdf29e4588ff3ad13c82f9c4fae35f.bindPopup(popup_479ef94a2cda8e2a04ef69c501d875cd)
+        ;
+
+        
+    
+    
+            circle_marker_49cdf29e4588ff3ad13c82f9c4fae35f.bindTooltip(
+                `<div>
+                     Gujarat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b19420b61089a52f6f771263147ee1d4 = L.circleMarker(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_36eff6317411c1fa8d3d7a6691ce2b01 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4807750b128e442d92fd46147d755e17 = $(`<div id="html_4807750b128e442d92fd46147d755e17" style="width: 100.0%; height: 100.0%;">     <h3>Haryana</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Haryana is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Gurugram, Faridabad, Chandigarh     </div>`)[0];
+                popup_36eff6317411c1fa8d3d7a6691ce2b01.setContent(html_4807750b128e442d92fd46147d755e17);
+            
+        
+
+        circle_marker_b19420b61089a52f6f771263147ee1d4.bindPopup(popup_36eff6317411c1fa8d3d7a6691ce2b01)
+        ;
+
+        
+    
+    
+            circle_marker_b19420b61089a52f6f771263147ee1d4.bindTooltip(
+                `<div>
+                     Haryana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c70a04e4b0e430d3c75a00770b462fd = L.circleMarker(
+                [31.1048, 77.1734],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_b612a71aa73a9655b121850e1724915d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_79acdef339782ad3a0c4f5102a0380a1 = $(`<div id="html_79acdef339782ad3a0c4f5102a0380a1" style="width: 100.0%; height: 100.0%;">     <h3>Himachal Pradesh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Himachal Pradesh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Shimla, Dharamshala, Manali     </div>`)[0];
+                popup_b612a71aa73a9655b121850e1724915d.setContent(html_79acdef339782ad3a0c4f5102a0380a1);
+            
+        
+
+        circle_marker_6c70a04e4b0e430d3c75a00770b462fd.bindPopup(popup_b612a71aa73a9655b121850e1724915d)
+        ;
+
+        
+    
+    
+            circle_marker_6c70a04e4b0e430d3c75a00770b462fd.bindTooltip(
+                `<div>
+                     Himachal Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b05d9b52a560572ccfac3119b8b852a = L.circleMarker(
+                [23.6102, 85.2799],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_a8feeece6483565c5dde8df80112f4aa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3c90e55c2f001b20adf359822d32cefd = $(`<div id="html_3c90e55c2f001b20adf359822d32cefd" style="width: 100.0%; height: 100.0%;">     <h3>Jharkhand</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Jharkhand is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Ranchi, Jamshedpur, Dhanbad     </div>`)[0];
+                popup_a8feeece6483565c5dde8df80112f4aa.setContent(html_3c90e55c2f001b20adf359822d32cefd);
+            
+        
+
+        circle_marker_2b05d9b52a560572ccfac3119b8b852a.bindPopup(popup_a8feeece6483565c5dde8df80112f4aa)
+        ;
+
+        
+    
+    
+            circle_marker_2b05d9b52a560572ccfac3119b8b852a.bindTooltip(
+                `<div>
+                     Jharkhand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8f8bb06bec7b85ec46e521db315698f = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_7d9cfab081c8212f71a5788b1f431dfc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_938cda39ea604951523d20f00b176227 = $(`<div id="html_938cda39ea604951523d20f00b176227" style="width: 100.0%; height: 100.0%;">     <h3>Karnataka</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Karnataka is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Bengaluru, Mysuru, Mangaluru     </div>`)[0];
+                popup_7d9cfab081c8212f71a5788b1f431dfc.setContent(html_938cda39ea604951523d20f00b176227);
+            
+        
+
+        circle_marker_e8f8bb06bec7b85ec46e521db315698f.bindPopup(popup_7d9cfab081c8212f71a5788b1f431dfc)
+        ;
+
+        
+    
+    
+            circle_marker_e8f8bb06bec7b85ec46e521db315698f.bindTooltip(
+                `<div>
+                     Karnataka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f72b995097441bbd3c666608cbc1cdd0 = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_2b02a12eb056b551afc52560512c0a6f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0664df8c0fc0a7df1d9c04d09848c5d7 = $(`<div id="html_0664df8c0fc0a7df1d9c04d09848c5d7" style="width: 100.0%; height: 100.0%;">     <h3>Kerala</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Kerala is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Thiruvananthapuram, Kochi, Kozhikode     </div>`)[0];
+                popup_2b02a12eb056b551afc52560512c0a6f.setContent(html_0664df8c0fc0a7df1d9c04d09848c5d7);
+            
+        
+
+        circle_marker_f72b995097441bbd3c666608cbc1cdd0.bindPopup(popup_2b02a12eb056b551afc52560512c0a6f)
+        ;
+
+        
+    
+    
+            circle_marker_f72b995097441bbd3c666608cbc1cdd0.bindTooltip(
+                `<div>
+                     Kerala
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83c22eed66151932e69554f13819a3cd = L.circleMarker(
+                [22.9734, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_06141e50eb1a35fdef28847403d04a0b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f78c9f7bbfb2794fb55a151a76af75d4 = $(`<div id="html_f78c9f7bbfb2794fb55a151a76af75d4" style="width: 100.0%; height: 100.0%;">     <h3>Madhya Pradesh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Madhya Pradesh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Bhopal, Indore, Jabalpur     </div>`)[0];
+                popup_06141e50eb1a35fdef28847403d04a0b.setContent(html_f78c9f7bbfb2794fb55a151a76af75d4);
+            
+        
+
+        circle_marker_83c22eed66151932e69554f13819a3cd.bindPopup(popup_06141e50eb1a35fdef28847403d04a0b)
+        ;
+
+        
+    
+    
+            circle_marker_83c22eed66151932e69554f13819a3cd.bindTooltip(
+                `<div>
+                     Madhya Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be5fc2b7a17a195de748a586ada7bce4 = L.circleMarker(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_e4b0904c802d765b3048b04c5701ccc5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6fdfdca8a874001305bea317cdb52c8a = $(`<div id="html_6fdfdca8a874001305bea317cdb52c8a" style="width: 100.0%; height: 100.0%;">     <h3>Maharashtra</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Maharashtra is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Mumbai, Pune, Nagpur     </div>`)[0];
+                popup_e4b0904c802d765b3048b04c5701ccc5.setContent(html_6fdfdca8a874001305bea317cdb52c8a);
+            
+        
+
+        circle_marker_be5fc2b7a17a195de748a586ada7bce4.bindPopup(popup_e4b0904c802d765b3048b04c5701ccc5)
+        ;
+
+        
+    
+    
+            circle_marker_be5fc2b7a17a195de748a586ada7bce4.bindTooltip(
+                `<div>
+                     Maharashtra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95d72bdc22ddbd77ea7304ae55bed9bd = L.circleMarker(
+                [24.6637, 93.9063],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_1aee847723166ade3e962242f6e05580 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7b9a243c4faf29c33830149dcf717a0d = $(`<div id="html_7b9a243c4faf29c33830149dcf717a0d" style="width: 100.0%; height: 100.0%;">     <h3>Manipur</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Manipur is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Imphal, Bishnupur, Thoubal     </div>`)[0];
+                popup_1aee847723166ade3e962242f6e05580.setContent(html_7b9a243c4faf29c33830149dcf717a0d);
+            
+        
+
+        circle_marker_95d72bdc22ddbd77ea7304ae55bed9bd.bindPopup(popup_1aee847723166ade3e962242f6e05580)
+        ;
+
+        
+    
+    
+            circle_marker_95d72bdc22ddbd77ea7304ae55bed9bd.bindTooltip(
+                `<div>
+                     Manipur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ced79f63680ea8cc13955c3b00509b7 = L.circleMarker(
+                [25.467, 91.3662],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_852002ca85687eec681887e34e69c029 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a419a3f0a39818a21839f3258b0d917c = $(`<div id="html_a419a3f0a39818a21839f3258b0d917c" style="width: 100.0%; height: 100.0%;">     <h3>Meghalaya</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Meghalaya is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Shillong, Tura, Jowai     </div>`)[0];
+                popup_852002ca85687eec681887e34e69c029.setContent(html_a419a3f0a39818a21839f3258b0d917c);
+            
+        
+
+        circle_marker_5ced79f63680ea8cc13955c3b00509b7.bindPopup(popup_852002ca85687eec681887e34e69c029)
+        ;
+
+        
+    
+    
+            circle_marker_5ced79f63680ea8cc13955c3b00509b7.bindTooltip(
+                `<div>
+                     Meghalaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d826c1cc75f2c96c2d01e75631f4bda5 = L.circleMarker(
+                [23.1645, 92.9376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_22b5f55ff2831fcbadd6e07bda9b7fc3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0b3a7b7bae1f3ceae50f93fb5bf530bc = $(`<div id="html_0b3a7b7bae1f3ceae50f93fb5bf530bc" style="width: 100.0%; height: 100.0%;">     <h3>Mizoram</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Mizoram is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Aizawl, Lunglei, Champhai     </div>`)[0];
+                popup_22b5f55ff2831fcbadd6e07bda9b7fc3.setContent(html_0b3a7b7bae1f3ceae50f93fb5bf530bc);
+            
+        
+
+        circle_marker_d826c1cc75f2c96c2d01e75631f4bda5.bindPopup(popup_22b5f55ff2831fcbadd6e07bda9b7fc3)
+        ;
+
+        
+    
+    
+            circle_marker_d826c1cc75f2c96c2d01e75631f4bda5.bindTooltip(
+                `<div>
+                     Mizoram
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7bcc91b0c494aa603402150790b721bf = L.circleMarker(
+                [26.1584, 94.5624],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_51e6166c16a500c967f8e9149dfa74cb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e9058b0652d1ffa425d6099390012dcd = $(`<div id="html_e9058b0652d1ffa425d6099390012dcd" style="width: 100.0%; height: 100.0%;">     <h3>Nagaland</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Nagaland is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Kohima, Dimapur, Mokokchung     </div>`)[0];
+                popup_51e6166c16a500c967f8e9149dfa74cb.setContent(html_e9058b0652d1ffa425d6099390012dcd);
+            
+        
+
+        circle_marker_7bcc91b0c494aa603402150790b721bf.bindPopup(popup_51e6166c16a500c967f8e9149dfa74cb)
+        ;
+
+        
+    
+    
+            circle_marker_7bcc91b0c494aa603402150790b721bf.bindTooltip(
+                `<div>
+                     Nagaland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c772d6f00c200e69a2ef338ca0e52e88 = L.circleMarker(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_a0293ec76ef606841dbafa495621de66 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f333ed8fc367992598de3ab567ad600f = $(`<div id="html_f333ed8fc367992598de3ab567ad600f" style="width: 100.0%; height: 100.0%;">     <h3>Odisha</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Odisha is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Bhubaneswar, Cuttack, Rourkela     </div>`)[0];
+                popup_a0293ec76ef606841dbafa495621de66.setContent(html_f333ed8fc367992598de3ab567ad600f);
+            
+        
+
+        circle_marker_c772d6f00c200e69a2ef338ca0e52e88.bindPopup(popup_a0293ec76ef606841dbafa495621de66)
+        ;
+
+        
+    
+    
+            circle_marker_c772d6f00c200e69a2ef338ca0e52e88.bindTooltip(
+                `<div>
+                     Odisha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64957458e02f7dbd1e72fc8a532cabb2 = L.circleMarker(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_de601f5ac57a92318440f734edf670e4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_86eddac025485cbb48901eef37ce501b = $(`<div id="html_86eddac025485cbb48901eef37ce501b" style="width: 100.0%; height: 100.0%;">     <h3>Punjab</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Punjab is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Chandigarh, Ludhiana, Amritsar     </div>`)[0];
+                popup_de601f5ac57a92318440f734edf670e4.setContent(html_86eddac025485cbb48901eef37ce501b);
+            
+        
+
+        circle_marker_64957458e02f7dbd1e72fc8a532cabb2.bindPopup(popup_de601f5ac57a92318440f734edf670e4)
+        ;
+
+        
+    
+    
+            circle_marker_64957458e02f7dbd1e72fc8a532cabb2.bindTooltip(
+                `<div>
+                     Punjab
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2ce54f32e3bdc22ee671933bdcddc6d = L.circleMarker(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_60742c8ad6829c9496c251cac61fbfdc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fe03b6d079ae25f758e9e6d8cd8e1b87 = $(`<div id="html_fe03b6d079ae25f758e9e6d8cd8e1b87" style="width: 100.0%; height: 100.0%;">     <h3>Rajasthan</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Rajasthan is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Jaipur, Jodhpur, Udaipur     </div>`)[0];
+                popup_60742c8ad6829c9496c251cac61fbfdc.setContent(html_fe03b6d079ae25f758e9e6d8cd8e1b87);
+            
+        
+
+        circle_marker_f2ce54f32e3bdc22ee671933bdcddc6d.bindPopup(popup_60742c8ad6829c9496c251cac61fbfdc)
+        ;
+
+        
+    
+    
+            circle_marker_f2ce54f32e3bdc22ee671933bdcddc6d.bindTooltip(
+                `<div>
+                     Rajasthan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c4bc3117c304d6f3d118a5587e816a0 = L.circleMarker(
+                [27.533, 88.5122],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_2bc0731ad6d2f28e4c31a414f4940471 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b6ee7b737b099c9a744bd8c7b9c25696 = $(`<div id="html_b6ee7b737b099c9a744bd8c7b9c25696" style="width: 100.0%; height: 100.0%;">     <h3>Sikkim</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Sikkim is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Gangtok, Namchi, Mangan     </div>`)[0];
+                popup_2bc0731ad6d2f28e4c31a414f4940471.setContent(html_b6ee7b737b099c9a744bd8c7b9c25696);
+            
+        
+
+        circle_marker_7c4bc3117c304d6f3d118a5587e816a0.bindPopup(popup_2bc0731ad6d2f28e4c31a414f4940471)
+        ;
+
+        
+    
+    
+            circle_marker_7c4bc3117c304d6f3d118a5587e816a0.bindTooltip(
+                `<div>
+                     Sikkim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22a84a723aa762ca942bceeb4a8becd5 = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_9921eea175945024a66b405d8435fcb4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_873eedc7844f315088343fefc33a48db = $(`<div id="html_873eedc7844f315088343fefc33a48db" style="width: 100.0%; height: 100.0%;">     <h3>Tamil Nadu</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Tamil Nadu is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Chennai, Coimbatore, Madurai     </div>`)[0];
+                popup_9921eea175945024a66b405d8435fcb4.setContent(html_873eedc7844f315088343fefc33a48db);
+            
+        
+
+        circle_marker_22a84a723aa762ca942bceeb4a8becd5.bindPopup(popup_9921eea175945024a66b405d8435fcb4)
+        ;
+
+        
+    
+    
+            circle_marker_22a84a723aa762ca942bceeb4a8becd5.bindTooltip(
+                `<div>
+                     Tamil Nadu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3721e3e5208534b176a21016dd678fa5 = L.circleMarker(
+                [18.1124, 79.0193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_95846d51d29d1d6b67086b5cd44dba66 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_68b8be8b6f374376aa02353917a5391a = $(`<div id="html_68b8be8b6f374376aa02353917a5391a" style="width: 100.0%; height: 100.0%;">     <h3>Telangana</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Telangana is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Hyderabad, Warangal, Nizamabad     </div>`)[0];
+                popup_95846d51d29d1d6b67086b5cd44dba66.setContent(html_68b8be8b6f374376aa02353917a5391a);
+            
+        
+
+        circle_marker_3721e3e5208534b176a21016dd678fa5.bindPopup(popup_95846d51d29d1d6b67086b5cd44dba66)
+        ;
+
+        
+    
+    
+            circle_marker_3721e3e5208534b176a21016dd678fa5.bindTooltip(
+                `<div>
+                     Telangana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9db0115fe99f24c79171a656073cc86b = L.circleMarker(
+                [23.9408, 91.9882],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_bcf3c056ca9e7e64ffb8bcbcbf2dc331 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_312b4821070637eaee234b11ee72d747 = $(`<div id="html_312b4821070637eaee234b11ee72d747" style="width: 100.0%; height: 100.0%;">     <h3>Tripura</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Tripura is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Agartala, Udaipur, Dharmanagar     </div>`)[0];
+                popup_bcf3c056ca9e7e64ffb8bcbcbf2dc331.setContent(html_312b4821070637eaee234b11ee72d747);
+            
+        
+
+        circle_marker_9db0115fe99f24c79171a656073cc86b.bindPopup(popup_bcf3c056ca9e7e64ffb8bcbcbf2dc331)
+        ;
+
+        
+    
+    
+            circle_marker_9db0115fe99f24c79171a656073cc86b.bindTooltip(
+                `<div>
+                     Tripura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0408074301990554c20eba0f42fef152 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_71243acb46deed4381cc7156553b560d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_adc8209fe1e5d40dde7dcc4803ded21a = $(`<div id="html_adc8209fe1e5d40dde7dcc4803ded21a" style="width: 100.0%; height: 100.0%;">     <h3>Uttar Pradesh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Uttar Pradesh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Lucknow, Kanpur, Varanasi     </div>`)[0];
+                popup_71243acb46deed4381cc7156553b560d.setContent(html_adc8209fe1e5d40dde7dcc4803ded21a);
+            
+        
+
+        circle_marker_0408074301990554c20eba0f42fef152.bindPopup(popup_71243acb46deed4381cc7156553b560d)
+        ;
+
+        
+    
+    
+            circle_marker_0408074301990554c20eba0f42fef152.bindTooltip(
+                `<div>
+                     Uttar Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abebe6560238f3c586c65a900befe3a0 = L.circleMarker(
+                [30.0668, 79.0193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_8b2e944dd0df026691f8219e664594a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_72fd8e9fddfc874c0c6ab88ae1f00871 = $(`<div id="html_72fd8e9fddfc874c0c6ab88ae1f00871" style="width: 100.0%; height: 100.0%;">     <h3>Uttarakhand</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Uttarakhand is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Dehradun, Haridwar, Nainital     </div>`)[0];
+                popup_8b2e944dd0df026691f8219e664594a3.setContent(html_72fd8e9fddfc874c0c6ab88ae1f00871);
+            
+        
+
+        circle_marker_abebe6560238f3c586c65a900befe3a0.bindPopup(popup_8b2e944dd0df026691f8219e664594a3)
+        ;
+
+        
+    
+    
+            circle_marker_abebe6560238f3c586c65a900befe3a0.bindTooltip(
+                `<div>
+                     Uttarakhand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e30cb680c98ae22e52d87eff764885f1 = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_b587ffaa728043c00249e8dda1a7c2b1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dc850d3b4875c93e9f68ceb422e94f10 = $(`<div id="html_dc850d3b4875c93e9f68ceb422e94f10" style="width: 100.0%; height: 100.0%;">     <h3>West Bengal</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • West Bengal is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Kolkata, Durgapur, Howrah     </div>`)[0];
+                popup_b587ffaa728043c00249e8dda1a7c2b1.setContent(html_dc850d3b4875c93e9f68ceb422e94f10);
+            
+        
+
+        circle_marker_e30cb680c98ae22e52d87eff764885f1.bindPopup(popup_b587ffaa728043c00249e8dda1a7c2b1)
+        ;
+
+        
+    
+    
+            circle_marker_e30cb680c98ae22e52d87eff764885f1.bindTooltip(
+                `<div>
+                     West Bengal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a32e0b2a18cb1f6d15e0b5b1ec6387ca = L.circleMarker(
+                [11.7401, 92.6586],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_1492d886805c2a02728fb92b6331a91e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8d52441fade09a63779c7c4903b1c463 = $(`<div id="html_8d52441fade09a63779c7c4903b1c463" style="width: 100.0%; height: 100.0%;">     <h3>Andaman and Nicobar Islands</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Andaman and Nicobar Islands is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Port Blair     </div>`)[0];
+                popup_1492d886805c2a02728fb92b6331a91e.setContent(html_8d52441fade09a63779c7c4903b1c463);
+            
+        
+
+        circle_marker_a32e0b2a18cb1f6d15e0b5b1ec6387ca.bindPopup(popup_1492d886805c2a02728fb92b6331a91e)
+        ;
+
+        
+    
+    
+            circle_marker_a32e0b2a18cb1f6d15e0b5b1ec6387ca.bindTooltip(
+                `<div>
+                     Andaman and Nicobar Islands
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c29b47ec7629d01f953968a0d9c2cf5 = L.circleMarker(
+                [30.7333, 76.7794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_bdd1e7ec647b9e7c285319999d0e62d3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ae5a34d1e39d39dec03dbc3e296e885a = $(`<div id="html_ae5a34d1e39d39dec03dbc3e296e885a" style="width: 100.0%; height: 100.0%;">     <h3>Chandigarh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Chandigarh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Chandigarh     </div>`)[0];
+                popup_bdd1e7ec647b9e7c285319999d0e62d3.setContent(html_ae5a34d1e39d39dec03dbc3e296e885a);
+            
+        
+
+        circle_marker_5c29b47ec7629d01f953968a0d9c2cf5.bindPopup(popup_bdd1e7ec647b9e7c285319999d0e62d3)
+        ;
+
+        
+    
+    
+            circle_marker_5c29b47ec7629d01f953968a0d9c2cf5.bindTooltip(
+                `<div>
+                     Chandigarh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73ff8a656cec3b0815094926e981cec3 = L.circleMarker(
+                [20.1809, 73.0169],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_e82a8aea673e2c527ac45ea04148e205 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4b7756ed40e09327ca04c8973e1d52f5 = $(`<div id="html_4b7756ed40e09327ca04c8973e1d52f5" style="width: 100.0%; height: 100.0%;">     <h3>Dadra and Nagar Haveli and Daman and Diu</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Dadra and Nagar Haveli and Daman and Diu is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Daman, Silvassa     </div>`)[0];
+                popup_e82a8aea673e2c527ac45ea04148e205.setContent(html_4b7756ed40e09327ca04c8973e1d52f5);
+            
+        
+
+        circle_marker_73ff8a656cec3b0815094926e981cec3.bindPopup(popup_e82a8aea673e2c527ac45ea04148e205)
+        ;
+
+        
+    
+    
+            circle_marker_73ff8a656cec3b0815094926e981cec3.bindTooltip(
+                `<div>
+                     Dadra and Nagar Haveli and Daman and Diu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b0df3546c55b2fe38d0faf8371ad0de = L.circleMarker(
+                [28.7041, 77.1025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_6eb7bcc1f2ae19714c092f16bb88fc27 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8f338f4cc400bd47b8d66b88dc0dd126 = $(`<div id="html_8f338f4cc400bd47b8d66b88dc0dd126" style="width: 100.0%; height: 100.0%;">     <h3>Delhi</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Delhi is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Delhi     </div>`)[0];
+                popup_6eb7bcc1f2ae19714c092f16bb88fc27.setContent(html_8f338f4cc400bd47b8d66b88dc0dd126);
+            
+        
+
+        circle_marker_1b0df3546c55b2fe38d0faf8371ad0de.bindPopup(popup_6eb7bcc1f2ae19714c092f16bb88fc27)
+        ;
+
+        
+    
+    
+            circle_marker_1b0df3546c55b2fe38d0faf8371ad0de.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8292bbea62605ca092a4b8dca979933c = L.circleMarker(
+                [33.7782, 76.5762],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_679f21fc241c8a20bb2d76f40f1719ad = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_33b5868e080fecb4c439d18b10a2eacb = $(`<div id="html_33b5868e080fecb4c439d18b10a2eacb" style="width: 100.0%; height: 100.0%;">     <h3>Jammu and Kashmir</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Jammu and Kashmir is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Srinagar, Jammu     </div>`)[0];
+                popup_679f21fc241c8a20bb2d76f40f1719ad.setContent(html_33b5868e080fecb4c439d18b10a2eacb);
+            
+        
+
+        circle_marker_8292bbea62605ca092a4b8dca979933c.bindPopup(popup_679f21fc241c8a20bb2d76f40f1719ad)
+        ;
+
+        
+    
+    
+            circle_marker_8292bbea62605ca092a4b8dca979933c.bindTooltip(
+                `<div>
+                     Jammu and Kashmir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6116c13626c0e472aba1f7b09fdf914a = L.circleMarker(
+                [34.1526, 77.5771],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_e44de24da77ca7c94f8ec1076c64a9bc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d46ba512b2b5839f95af86d079cf5c7c = $(`<div id="html_d46ba512b2b5839f95af86d079cf5c7c" style="width: 100.0%; height: 100.0%;">     <h3>Ladakh</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Ladakh is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Leh, Kargil     </div>`)[0];
+                popup_e44de24da77ca7c94f8ec1076c64a9bc.setContent(html_d46ba512b2b5839f95af86d079cf5c7c);
+            
+        
+
+        circle_marker_6116c13626c0e472aba1f7b09fdf914a.bindPopup(popup_e44de24da77ca7c94f8ec1076c64a9bc)
+        ;
+
+        
+    
+    
+            circle_marker_6116c13626c0e472aba1f7b09fdf914a.bindTooltip(
+                `<div>
+                     Ladakh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4be94a5a993c381e941451d8ae4ccd85 = L.circleMarker(
+                [10.5667, 72.6417],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_44d1dbe370faa481121c52d316e411b8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cabeaff6caf63ca69d5c8cf70b70f83b = $(`<div id="html_cabeaff6caf63ca69d5c8cf70b70f83b" style="width: 100.0%; height: 100.0%;">     <h3>Lakshadweep</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Lakshadweep is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Kavaratti     </div>`)[0];
+                popup_44d1dbe370faa481121c52d316e411b8.setContent(html_cabeaff6caf63ca69d5c8cf70b70f83b);
+            
+        
+
+        circle_marker_4be94a5a993c381e941451d8ae4ccd85.bindPopup(popup_44d1dbe370faa481121c52d316e411b8)
+        ;
+
+        
+    
+    
+            circle_marker_4be94a5a993c381e941451d8ae4ccd85.bindTooltip(
+                `<div>
+                     Lakshadweep
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7da179f1836bcd99e470484dd10cca78 = L.circleMarker(
+                [11.9416, 79.8083],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2fa15d3744d9c784b0b5fe99dfcdef08);
+        
+    
+        var popup_d68a393c35d6118480a5d1bdf3893a03 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3939cdb43490cb83e30b850d6d819e95 = $(`<div id="html_3939cdb43490cb83e30b850d6d819e95" style="width: 100.0%; height: 100.0%;">     <h3>Puducherry</h3>      <b>Risk Level:</b> Low<br><br>      <b>Forecast ONI:</b> -0.81<br><br>      <b>Expected Effects:</b><br>     • Puducherry is affected by El Niño driven rainfall shifts<br>• Agricultural stress may increase under neutral<br>• Water resource planning should be strengthened      <br><br>      <b>Major Cities:</b><br>     Pondicherry     </div>`)[0];
+                popup_d68a393c35d6118480a5d1bdf3893a03.setContent(html_3939cdb43490cb83e30b850d6d819e95);
+            
+        
+
+        circle_marker_7da179f1836bcd99e470484dd10cca78.bindPopup(popup_d68a393c35d6118480a5d1bdf3893a03)
+        ;
+
+        
+    
+    
+            circle_marker_7da179f1836bcd99e470484dd10cca78.bindTooltip(
+                `<div>
+                     Puducherry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
